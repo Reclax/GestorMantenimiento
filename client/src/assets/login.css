@@ -1,42 +1,75 @@
-.banner{
+.banner {
     width: 100%;
-}
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-.login-container {
-    background-color: rgb(247, 247, 247);
-    padding-bottom: 100px;
-}
+
 
 .boton-iniciarsesion {
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     border-radius: 5px;
-    color: #333;
+    color: #FFFFFF;
+    background-color: #9F1C26;
 }
 
 .label-login {
     color: #333;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: larger;
     font-weight: 500;
 }
 
-.form-login {
-    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+.login-container {
+    display: flex;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: flex-start;  /* Alineado al inicio del eje vertical */
+    height: 85vh;            /* Ocupa toda la altura de la ventana */
+    padding-top: 179px;        /* Agrega un margen superior */
+  }
+  
+  .form-login {
+    padding: 2rem;
+    width: 300px;             /* Ajusta el ancho que necesites */
+    background-color: white;  /* Fondo blanco o el color que prefieras */
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, .2);
-}
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
 
 .input-login {
     text-align: center;
     padding: 10px;
 }
-footer{
+footer {
     background-color: #404041;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #fff;
     text-align: center;
-}
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  
+    /* Usamos flexbox para alinear el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alínea el contenido al fondo del contenedor */
+    
+    height: 25px; /* Asegura que el footer tenga suficiente altura */
+  }
+  
+  footer p {
+    margin: 0; /* Elimina márgenes extra en el texto */
+    padding-bottom: 0px; /* Añade un pequeño padding para separarlo del fondo */
+  }
 p{
     p {
         display: block;

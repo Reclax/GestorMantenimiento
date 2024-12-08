@@ -40,11 +40,11 @@ function Login() {
 
   return (
     <>
-      <div>
+      <div className="banner"> 
         <img className="banner" src="https://www.uta.edu.ec/v3.2/uta/images/header.png" alt="" />
       </div>
       <div className="d-flex vh-50 login-container justify-content-center align-items-center">
-        <div className="p-3 w-25">
+        <div >
           <div className="form-login">
             <form onSubmit={validar}>
               <div className="input-login">
@@ -65,8 +65,8 @@ function Login() {
                   onChange={(event) => setClave(event.target.value)}
                 />
               </div>
-              <div className="boton-iniciarsesion ">
-                <button className="btn btn-secondary">Iniciar Sesion</button>
+              <div >
+                <button className="boton-iniciarsesion">Iniciar Sesion</button>
               </div>
             </form>
           </div>
